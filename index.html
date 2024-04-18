@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <!-- Metadados -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Link para o arquivo CSS -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Título da página -->
+    <title>Correlation</title>
+</head>
+
+<body>
+    <!-- Cabeçalho do sistema -->
+    <header>
+        <!-- Título e subtítulo -->
+        <div class="title">
+            <h1>Pós-graduação em Engenharia de Software PUC-RJ - MVP1 Wellington Melo</h1>
+        </div>
+        <!-- Banner do sistema -->
+        <div class="banner">
+            <img src="img/banner_img.jpg" alt="Banner Correlation Service">
+        </div>
+    </header>
+
+    <!-- Formulário para adicionar um novo item -->
+    <section class="newItem">
+        <!-- Container para o formulário -->
+        <div class="col">
+            <form>
+                <!-- Título do formulário -->
+                <h4>
+                    CRIAR <span>CORRELAÇÃO</span>
+                </h4>
+                <!-- Campos do formulário -->
+                <input type="text" id="newSystemOrigin" placeholder="Sistema de Origem">
+                <input type="text" id="newEntityOrigin" placeholder="Entidade de Origem">
+                <input type="text" id="newIDOrigin" placeholder="ID de Origem">
+                <input type="text" id="newSystemDestination" placeholder="Sistema de Destino">
+                <input type="text" id="newEntityDestination" placeholder="Entidade de Destino">
+                <input type="text" id="newIDDestination" placeholder="ID de Destino">
+                <input type="text" id="newGroup" placeholder="Grupo">
+                <!-- Botão para adicionar item -->
+                <button id="newItemButton" class="addBtn">Adicionar</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Dropdowns para filtrar os itens -->
+    <section class="filters">
+        <!-- Título do filtro -->
+        <h4>
+            FILTRAR <span>POR GRUPO</span>
+        </h4>
+        <!-- Dropdown para seleção de grupo -->
+        <select id="grupoDropdown">
+            <option value="">Todos os Grupos</option>
+        </select>
+        <!-- Botão para filtrar itens -->
+        <button id="filterButton" class="addBtnSel" type="button">Selecionar</button>
+    </section>
+
+    <!-- Tabela com itens existentes -->
+    <section class="items">
+        <!-- Tabela -->
+        <table id="myTable">
+            <!-- Cabeçalho da tabela -->
+            <tr>
+                <th>Sistema de Origem</th>
+                <th>Entidade de Origem</th>
+                <th>ID de Origem</th>
+                <th>Sistema de Destino</th>
+                <th>Entidade de Destino</th>
+                <th>ID de Destino</th>
+                <th>Grupo</th>
+                <th>Deletar Correlação</th>
+            </tr>
+        </table>
+    </section>
+
+    <!-- Link para o arquivo JavaScript -->
+    <script src="scripts.js"></script>
+</body>
+
+</html>
